@@ -7,7 +7,13 @@ public class Elfo extends Raca {
     Random rd = new Random();
     
     public Elfo(String nome){
-        super(nome);
+        super(nome, new String[]{
+            "fireBall",
+            "arrowAtack",
+            "superStarAtack",
+            "chuteAlto",
+            "rateiraDirecionada"
+        });
     }
 
     public int fireBall() throws MagiaInsuficienteException{

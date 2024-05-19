@@ -7,17 +7,13 @@ public class Anao extends Raca {
     private Random rd = new Random();
 
     public Anao(String nome){
-        super(nome, this.ataques());
-    }   
-
-    public String[] ataques(){
-        return new String[]{
+        super(nome, new String[]{
             "paneladaDoThor",
             "pedradaForte",
             "socoBaixo",
             "bicudaNaBarriga",
             "miniBazucada"
-        };
+        });
     }
 
     public int paneladaDoThor() throws MagiaInsuficienteException{
@@ -25,15 +21,15 @@ public class Anao extends Raca {
         return (rd.nextInt(80) + 21) * this.forca;
     }
 
-    public int pedradaForte(){
+    public int pedradaForte() throws MagiaInsuficienteException{
         return (rd.nextInt(130) + 21) * this.forca;
     }
 
-    public int socoBaixo(){
+    public int socoBaixo() throws MagiaInsuficienteException{
         return (rd.nextInt(30) + 21) * this.forca;
     }
 
-    public int bicudaNaBarriga(){
+    public int bicudaNaBarriga() throws MagiaInsuficienteException {
         return (rd.nextInt(81) + 21) * this.forca;
     }
 
@@ -41,4 +37,5 @@ public class Anao extends Raca {
         this.verificarMana(10);
         return (rd.nextInt(180) + 21) * this.forca;
     }
+    
 }

@@ -9,10 +9,16 @@ public class Humano extends Raca {
     Random rd = new Random();
 
     public Humano(String nome){
-        super(nome);
+        super(nome, new String[]{
+            "jabDireto",
+            "quebraQueixo",
+            "petelecoQuente",
+            "chuteGiratorio",
+            "tapaSeco"
+        });
     }
 
-    public int jabDireto(){
+    public int jabDireto() throws MagiaInsuficienteException{
         return (rd.nextInt(80) + 21) * this.forca;
     }
 
@@ -21,12 +27,11 @@ public class Humano extends Raca {
         return (rd.nextInt(130) + 21) * this.forca;
     }
 
-    public int petelecoQuente(){
- 
+    public int petelecoQuente() throws MagiaInsuficienteException{
         return (rd.nextInt(30) + 21) * this.forca;
     }
 
-    public int chuteGiratorio(){
+    public int chuteGiratorio() throws MagiaInsuficienteException{
         return (rd.nextInt(80) + 21) * this.forca; 
     }
 

@@ -5,14 +5,14 @@ public class Main {
     public static void main(String[] args) {
         Anao anao = new Anao("Joao");
         Humano humano = new Humano("Lucas");
-        anao.setVida(1800);
+        anao.setVida(5000);
         anao.setForca(10);
         anao.setMagia(20);
         anao.setAgilidade(15);
         anao.setInteligencia(50);
         anao.incrementLevel();
 
-        humano.setVida(1000);
+        humano.setVida(4000);
         humano.setForca(10);
         humano.setMagia(20);
         humano.setAgilidade(15);
