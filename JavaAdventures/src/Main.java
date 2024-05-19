@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Anao anao = new Anao("Joao");
         Humano humano = new Humano("Lucas");
-        anao.setVida(5000);
+        anao.setVida(10000);
         anao.setForca(10);
         anao.setMagia(20);
         anao.setAgilidade(15);
